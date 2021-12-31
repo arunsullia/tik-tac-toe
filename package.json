@@ -1,14 +1,18 @@
 {
+  "homepage": "https://arunsullia.github.io/tik-tac-toe",
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "0.9.5"
   },
   "devDependencies": {},
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
